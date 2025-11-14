@@ -63,7 +63,7 @@ def home():
 def add_user():
     if request.method == "GET":
         # Show the form
-        return render_template("add_user.html")
+        return render_template("newbaking.html")
 
     # POST: process form submission
     name = request.form.get("name", "").strip()
@@ -140,7 +140,7 @@ def list_users():
     conn.close()
 
     # Pass users to template
-    return render_template("list_users.html", users=rows)
+    return render_template("listbaking.html", users=rows)
 
 
 @app.route("/list_results")
@@ -157,7 +157,7 @@ def list_results():
     ).fetchall()
     conn.close()
 
-    return render_template("list_results.html", entries=rows)
+    return render_template("bakingresults.html", entries=rows)
 
 
 @app.route("/result")
