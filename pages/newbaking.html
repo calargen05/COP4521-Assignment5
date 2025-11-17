@@ -7,19 +7,18 @@
   </head>
   <body>
     <h1>Baking Contest User Information</h1>
-    <form action="/submitNewBaking" method="post">
+    <form action="/add_user" method="post">
       <label for="username">Username:</label><br>
-      <input type="text" id="username" name="username" required><br><br>
+      <input type="text" id="username" name="name" required><br><br>
       <label for="age">Age:</label><br>
       <input type="number" id="age" name="age" required><br><br>
       <label for="phone_number" >Phone Number:</label><br>
-      <input type="number" id="phone_number" name="phone_number" required><br><br>
+      <input type="number" id="phone_number" name="phone" required><br><br>
       <label for="security_level">Security Level</label><br>
       <input type="number" id="security_level" name="security_level" required><br><br>
       <label for="password">Login Password:</label><br>
       <input type="password" id="password" name="password" required><br><br>
       <input type="submit" value="Submit">
     </form>
-    <h2><a href="/">Back to Home</a></h2>
   </body>
 </html>
